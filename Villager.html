@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.min.js"></script>
+</head>
+<body>
+    <script>
+function setup() {
+	createCanvas(500, 500)
+}
+
+function draw() {
+
+	background(135,206,250);
+	fill(213, 208, 156);
+  strokeWeight(1);
+	stroke(1, 2, 1, 100);
+	//head
+  rect(10, 4, 150, 150);
+	rect(30, 4, 150, 150);
+	//unibrow
+	fill(44, 30, 1);
+	rect(40, 20, 125, 15);
+	//eyes
+	fill(1000, 1000, 1000);
+	rect(50, 40, 35, 45);
+	rect(120, 40, 35, 45);
+	//pupils
+	fill(43, 255, 0)
+	rect(60, 70, 10, 10);
+	rect(130, 70, 10, 10);
+	//nose
+	fill(169, 113, 0);
+	rect(90, 70, 20, 40);
+	rect(100, 70, 20, 40);
+	fill(0, 0, 0);
+	rect(95, 100, 2, 2);
+	//mouth
+	fill(0,0,0);
+	rect(55, 120, 100, 30);
+	//tongue
+	fill(350, 10, 10);
+	rect(85, 130, 40, 20);
+	//neck
+	fill(213, 208, 156);
+	rect(60, 155, 50, 50);
+	rect(80, 155, 50, 50);
+	
+	
+}
+    </script>
+</body>
+</html>
