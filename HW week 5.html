@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.min.js"></script>
+</head>
+<body>
+<script>
+var fillG = 50;
+var xPos = 20;
+var yPos = 20;
+var xStep = 50;
+var yStep = 50;
+var stepG = 25;
+function setup() {
+  createCanvas(400, 400);
+}
+function draw() {
+  background(255);
+  for(var i = 0; i < 30; i++){
+      line(20*i, 100, 20*i, 300);
+  }
+      for(var i = 2; i < 30; i++){
+          rect(10, 200, 20, 300);
+          ellipse(200, 200, 2*i, 4);
+          rect(350, 200, 20, 300);
+      }
+   
+}
+
+</script>
+</body>
+</html>  
