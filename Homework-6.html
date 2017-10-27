@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.min.js"></script>
+</head>
+<body>
+<script>
+/*var fillG = 50;
+var xPos = 20;
+var yPos = 20;
+var xStep = 50;
+var yStep = 50;
+var stepG = 25;
+function setup() {
+  createCanvas(600, 600);
+  frameRate(10);
+}
+function draw() {
+  background(255);
+
+  for(var i = 0; i < 30; i++){
+      line(20*i, 100, 20*i, 300);
+  }
+    rect(10, 200, frameCount, 300);
+    ellipse(200, 200, mouseX, mouseY);
+    rect(350, 200, 200, 300);
+if (mouseY <= height / 2) {
+    rect(100, 100, 100, 100);
+}*/
+function setup() {
+  createCanvas(400, 400);
+
+}
+
+function draw() {
+  // If the mouse pointer is in the top half, background is light gray
+  if (mouseY <= height / 2) {
+    background(200);
+    fill(1000);
+    noStroke();
+    ellipse(mouseX, mouseY, 45, 45);
+  }
+  // If the mouse pointer is in the bottom half, background is black
+  if (mouseY > height / 2) {
+    background(0);
+    fill(255);
+    noStroke();
+    rect(mouseX, mouseY, 45, 45);
+  }
+  if (mouseY >= width / 2) {
+    background(0);
+    fill(255);
+    noStroke();
+    ellipse(mouseX, mouseY, 45, 45);
+  }
+     if (mouseY < width / 2) {
+    background(0);
+    fill(1000);
+    noStroke();
+    rect(mouseX, mouseY, 45, 45);
+  }
+
+}
+</script>
+</body>
+</html>

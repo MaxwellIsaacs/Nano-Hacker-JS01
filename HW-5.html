@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+</html>
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.min.js">
+//Calls function setup(), setting up the canvas (Runs one time)
+function setup() {
+  createCanvas(600, 400);
+}
+//Calls function draw(), making the drawing space (runs infinatly)
+function draw() {
+//Sets background color
+  background(0);
+//Calls strokeWeight. Border width/weight
+  strokeWeight(4);
+//Calls stroke. Color of border
+  stroke(255);
+//For loop. x starts at 0, gains 50 every loop and ends at 300
+  for (var x = 0; x <= width / 2; x += 50) {
+//For loop. Y starts at 0, gains 50 every loop and ends at 400
+  for (var y = 0; y <= height / 2; y += 50) {
+//Calls Fill and Ellipse, making a ellipse and filling it with color(blue)
+      fill(0, 91, 239);
+      ellipse(x, y, 25, 25);
+    }
+  }
+}
+</script>
+</body>
+</html>
