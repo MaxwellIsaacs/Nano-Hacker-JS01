@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.min.js">
+    </script>
+    <script>
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(50);
+  stroke(255);
+  strokeWeight(8);
+  noFill();
+  if (mouseIsPressed) {
+    line(110, 150, 160, 150);
+    line(220, 150, 270, 150);
+    ellipse(190, 250, 200, 50);
+  } else {
+    //if mouse covers the left eye, it winks at you
+    if (mouseX >= 124 && mouseX <= 172 && mouseY >= 126 && mouseY <= 171) {
+      line(110, 150, 160, 150);
+      ellipse(250, 150, 40, 40);
+      line(100, 275, 300, 275);
+    //if mouse covers the right eye, it winks at you
+    } else if (mouseX >= 224 && mouseX <= 274 && mouseY >= 126 && mouseY <= 171) {
+      ellipse(150, 150, 40, 40);
+      line(250, 150, 290, 150);
+      line(100, 275, 300, 275);
+    //face stays at same place
+    } else {
+      ellipse(150, 150, 40, 40);
+      ellipse(250, 150, 40, 40);
+      line(100, 275, 300, 275);
+    }
+  }
+}
+</script>
+</body>
+</html>                                                                            

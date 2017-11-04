@@ -28,32 +28,32 @@ if (mouseY <= height / 2) {
     rect(100, 100, 100, 100);
 }*/
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
 
 }
 
 function draw() {
   // If the mouse pointer is in the top half, background is light gray
-  if (mouseY <= height / 2) {
+  if (mouseY <= height / 4) {
     background(200);
-    fill(1000);
+    fill(255);
     noStroke();
     ellipse(mouseX, mouseY, 45, 45);
   }
   // If the mouse pointer is in the bottom half, background is black
-  if (mouseY > height / 2) {
+  if (mouseY > height / 4) {
     background(0);
     fill(255);
     noStroke();
     rect(mouseX, mouseY, 45, 45);
   }
-  if (mouseY >= width / 2) {
+  if (mouseY >= height / 4) {
     background(0);
     fill(255);
     noStroke();
     ellipse(mouseX, mouseY, 45, 45);
   }
-     if (mouseY < width / 2) {
+     if (mouseY < height / 4) {
     background(0);
     fill(1000);
     noStroke();
